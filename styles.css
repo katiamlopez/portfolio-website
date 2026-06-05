@@ -1,0 +1,99 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Base */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: white;
+    color: rgb(31, 13, 13);
+    line-height: 1.6;
+}
+/* Layout */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+section {
+  margin-bottom: 80px;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+h2 {
+  margin-bottom: 24px;
+  text-align: center;
+}
+/* Header */
+header {
+  padding: 20px;
+  background-color:white;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: rgb(31, 13, 13);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: ivory;
+}
+/* Hero */
+#hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#hero-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+#hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+}
+
+#hero h2 {
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+  color: #6f6a73;
+}
+
+.project-card,
+.certification-card,
+.skills-group {
+  background-color: white;
+  padding: 24px;
+  border-radius: 16px;
+  margin-bottom: 24px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.project-preview {
+    width: 100%;
+}
