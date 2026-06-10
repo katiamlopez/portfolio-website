@@ -8,7 +8,7 @@
      <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <header> 
+    <header id="top"> 
         <nav>
             <a href="#contact">Contact</a>
             <a href="#projects">Projects</a>
@@ -20,19 +20,52 @@
         <section id="hero">
             <img id="hero-img" src="./assets/profile-photo.png" alt="profile-photo">
             <h1>Katja.js</h1>
-            <h2>Aspiring Front-End Developer</h2>
+            <h2>Frontend Developer | UX & Product Thinking</h2>
             <p>⭐ Building creative and meaningful digital experiences through code ⭐</p>
+            <a href="./assets/Katia-Lopez-Resume.pdf" download>
+                Download Resume
+            </a>
         </section>
         <section id="about">
             <h2>About me</h2>
             <p>My professional background is in customer service and operations management, where I developed leadership, communication, and problem-solving skills while working with performance metrics and continuous improvement initiatives. Today, I am transitioning into Front-End Development, driven by a passion for technology, user experience, and product design. I am excited to combine my understanding of people with my growing technical skills to create intuitive and engaging digital products.</p>
+            <div class="soft-skills">
+              <span>Leadership</span>
+              <span>Problem-solving</span>
+              <span>Communication</span>
+              <span>Performance improvement</span>
+              <span>Analytical thinking</span>
+              <span>User empathy</span>
+            </div>
         </section>
         <section id="projects">
             <h2>Projects</h2>
             <article class="project-card">
                 <div class="project-info">
+                    <h3>Caliope - Reader & Writer Platform 📖</h3>
+                    <br>
+                    <p>Caliope is a digital platform designed to bring the literary community together within a single ecosystem. The project aims to unify the reading experience by connecting readers, writers, and reviewers in one space, reducing the fragmentation that currently exists across multiple apps and social platforms.</p>
+                    <p>As one of the key contributors to the project, I created the initial concept, conducted market research, and helped define the value proposition. During development, I adapted the original vision into a functional MVP by prioritizing core features, simplifying the visual identity for both light and dark themes, and preparing the project's foundational documentation. I also proposed product improvements focused on user experience and designed the main application screens to help communicate the long-term vision of the platform.</p>
+                    <p>The project is currently being developed using HTML, CSS, Bootstrap, and JavaScript for the frontend, while the backend and database integration are in the early stages of implementation.</p>
+                    <br>
+                    <img 
+                        class="project-preview" 
+                        src="./assets/caliope-preview.png" 
+                        alt="Screenshot of Caliope project"
+                    >
+                    <div class="project-links">
+                        <a href="https://github.com/katiamlopez/Caliope-MVP" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </div>
+            </article>
+            <article class="project-card">
+                <div class="project-info">
                     <h3>Link in Bio 💖</h3>
-                    <p> A personal link page built with HTML and CSS as my final project for the Codédex HTML course.</p>
+                    <br>
+                    <p>Built as the final project for the Codédex HTML course, this Link in Bio page was designed to create a simple and centralized space for sharing my professional profiles and online presence.</p>
+                    <p>The project was developed using HTML and CSS, focusing on semantic structure, accessibility, and clean page organization.</p>
+                    <p>Visitors can quickly access my social media profiles, GitHub repositories, Codédex profile, and other important links through a responsive and easy-to-navigate interface.</p>
+                    <br>
                     <img 
                     class="project-preview" 
                     src="./assets/link-in-bio-preview.png" 
@@ -47,8 +80,10 @@
             <article class="project-card">
                 <div class="project-info">
                     <h3>JavaSport - Online Sportswear Store 🏃🏻‍♂️</h3>
-                    <p>A landing page for an online sportswear store, created during a hackathon in less than 24 hours. 
-                        Project focused on presenting products, brand identity, and a clear shopping experience.</p>
+                    <br>
+                    <p>A sportswear e-commerce landing page developed during a hackathon, where the main challenge was coordinating as a team and delivering a functional product in less than 24 hours. Built using HTML, CSS, Bootstrap, and JavaScript, the project focused on creating an engaging online shopping experience for a sports apparel brand.</p>
+                    <p>My contribution centered on the CSS architecture, including organizing stylesheet connections, defining global styles, and establishing the project's color palette and typography system to ensure visual consistency across the website.</p>
+                    <br>
                     <img
                     class="project-preview"
                     src="./assets/javasport-preview.png"
@@ -56,21 +91,6 @@
                     >
                     <div class="project-links">
                       <a href="https://github.com/IsraelMRQ/Javasport" target="_blank" rel="noopener noreferrer">GitHub</a> 
-                    </div>
-                </div>
-            </article>
-            <article class="project-card">
-                <div class="project-info">
-                    <h3>Caliope - Reader & Writer Platform 📖</h3>
-                    <p>A collaborative reading and writing platform prototype focused on stories, reviews, and immersive reading experiences.</p>
-                    
-                    <img 
-                        class="project-preview" 
-                        src="./assets/caliope-preview.png" 
-                        alt="Screenshot of Caliope project"
-                    >
-                    <div class="project-links">
-                        <a href="https://github.com/katiamlopez/Caliope-MVP" target="_blank" rel="noopener noreferrer">GitHub</a>
                     </div>
                 </div>
             </article>
@@ -138,8 +158,13 @@
         </section>
     </main>
     <footer>
-        <p>© 2026 Katja.js. Built with HTML & CSS.</p>
-        <p>Designed with curiosity, creativity, and a love for learning ⭐</p>
+      <p>© 2026 Katja.js. Built with HTML & CSS.</p>
+      <p>⭐ Designed with curiosity, creativity, and a love for learning ⭐</p> <br>
+      <p>
+        Curious about how this site was built? <br>
+        <a href="https://github.com/katiamlopez/portfolio-website" target="_blank" rel="noopener noreferrer">View the repository</a>
+      </p>
     </footer>
+     <a href="#top" class="back-to-top">↑</a>
 </body>
 </html>
