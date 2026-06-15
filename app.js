@@ -62,6 +62,10 @@ const translations = {
         messagePlaceholder: "Your message",
         sendmsg: "Send message",
 
+        sendingMessage: "Sending message...",
+        messageSuccess: "Message sent successfully!",
+        messageError: "Something went wrong. Please try again.",
+
         liveDemo: "Live Demo",
         repository: "View the repository",
         viewCertificate: "View Certificate",
@@ -122,6 +126,10 @@ const translations = {
         messagePlaceholder: "Tu mensaje",
         sendmsg: "Enviar mensaje",
 
+        sendingMessage: "Enviando mensaje...",
+        messageSuccess: "¡Mensaje enviado con éxito!",
+        messageError: "Algo salió mal. Inténtalo de nuevo.",
+
         liveDemo: "Demostración en vivo",
         repository: "Ver repositorio",
         viewCertificate: "Ver certificado",
@@ -155,6 +163,10 @@ languageToggle.addEventListener("change", function() {
 contactForm.addEventListener("submit", function(event) {
   event.preventDefault();
 
+  const currentLanguage = languageToggle.checked ? "es" : "en";
+
+  formStatus.textContent = translations[currentLanguage].sendingMessage;
+
   const formData = new FormData(contactForm);
 
   fetch(contactForm.action, {
@@ -166,13 +178,13 @@ contactForm.addEventListener("submit", function(event) {
   })
   .then(function(response) {
     if (response.ok) {
-      formStatus.textContent = "Message sent successfully!";
+      formStatus.textContent = translations[currentLanguage].messageSuccess;
       contactForm.reset();
     } else {
-      formStatus.textContent = "Something went wrong. Please try again.";
+      formStatus.textContent = translations[currentLanguage].messageError;
     }
   })
   .catch(function(error) {
-    formStatus.textContent = "Something went wrong. Please try again.";
+    formStatus.textContent = translations[currentLanguage].messageError;
   });
 });
