@@ -92,7 +92,7 @@ nav a:hover {
 }
 
 .slider span {
-  color: #4b3a63;
+  color: #e7ddf5;
 }
 
 .slider::before {
@@ -493,11 +493,11 @@ body.dark-theme .soft-skills span:hover {
  background-color: #765f98; 
 }
 body.dark-theme .slider {
-  background-color:#765f98;
+  background-color:#796498;
 }
 body.dark-theme .slider::before {
   background-color: #5c3d7b;
 }
 body.dark-theme .slider span {
-  color: #ddd;
+  color: #2f1a45;
 }
