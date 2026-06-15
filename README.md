@@ -1,8 +1,8 @@
 # ✨ Personal Portfolio Website
 
-A personal portfolio website built with HTML and CSS as the final project for the Codédex CSS course.
+A personal portfolio website built to showcase my professional background, projects, certifications, technical skills, and contact information.
 
-The website showcases my professional background, projects, certifications, technical skills, and contact information while applying fundamental web development concepts such as semantic HTML, the CSS box model, layouts, and responsive design principles.
+This project started as the final project for the Codédex CSS course and has continued evolving as a living portfolio. It now includes interactive features built with JavaScript, such as a light/dark theme toggle, English/Spanish language switch, and a functional contact form.
 
 ## 🔗 Live Demo
 
@@ -12,39 +12,47 @@ https://portfolio-website-eight-liard-14.vercel.app/
 
 - Responsive personal portfolio layout
 - About Me section
-- Featured projects with previews and links
+- Featured projects with previews and repository links
 - Certifications section
 - Skills & Tools section
-- Contact section with social links and contact form
+- Contact section with social links
+- Functional contact form using Formspree
+- Light and dark theme toggle
+- English/Spanish language switch
+- Dynamic text translation using JavaScript
 - Semantic HTML structure
 - Custom CSS styling
+- JavaScript DOM manipulation and event handling
 
 ## 🛠️ Technologies Used
 
 - HTML5
 - CSS3
+- JavaScript
+- Formspree
 - Git
 - GitHub
+- Vercel
 
 ## 📁 Featured Projects
 
-### Link in Bio
+### Caliope – Reader & Writer Platform
 
-A personal link page built with HTML and CSS as the final project for the Codédex HTML course.
+A collaborative reading and writing platform prototype designed to bring readers, writers, and reviewers into one literary ecosystem.
 
 ### JavaSport – Online Sportswear Store
 
-A landing page for an online sportswear store, designed and built during a hackathon in less than 24 hours.
+A sportswear e-commerce landing page developed during a hackathon, where the main challenge was coordinating as a team and delivering a functional product in less than 24 hours.
 
-### Caliope – Reader & Writer Platform
+### Pomodoro Timer
 
-A collaborative reading and writing platform prototype focused on stories, reviews, and immersive reading experiences.
+An interactive productivity timer built with HTML, CSS, and JavaScript. The project includes customizable intervals, start/pause/reset controls, visual progress feedback, and automatic transitions between work mode, break mode, and session completion.
 
 ## 👩‍💻 About Me
 
 I have experience in customer service and operations supervision, where I had the opportunity to lead teams, work with KPIs, identify areas for improvement, and implement action plans to enhance performance.
 
-Currently, I am pursuing a career in Front-End Development, with a strong interest in user experience and product design. I enjoy combining analytical thinking, creativity, and problem-solving to build meaningful digital experiences.
+Currently, I am transitioning into Front-End Development, with a strong interest in user experience and product design. I enjoy combining analytical thinking, creativity, and problem-solving to build meaningful digital experiences.
 
 ## 📫 Contact
 
