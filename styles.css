@@ -408,6 +408,12 @@ footer a:hover {
   background-color: #d8cde8;
 }
 
+#form-status {
+  margin-top: 12px;
+  font-weight: bold;
+  color: #8f7a9b;
+}
+
 .back-to-top {
   position: fixed;
   right: 24px;
@@ -473,6 +479,10 @@ body.dark-theme .contact-form button {
 
 body.dark-theme .contact-form button:hover {
   background-color: #b2a5fc;
+}
+
+body.dark-theme #form-status {
+  color: #f8f2ff;
 }
 
 body.dark-theme .contact-links a:hover,

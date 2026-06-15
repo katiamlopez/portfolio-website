@@ -2,6 +2,8 @@ const themeToggle = document.querySelector("#theme-toggle");
 const languageToggle = document.querySelector("#language-toggle");
 const elements = document.querySelectorAll("[data-i18n]");
 const placeholderElements = document.querySelectorAll("[data-i18n-placeholder]");
+const contactForm = document.querySelector(".contact-form");
+const formStatus = document.querySelector("#form-status");
 
 themeToggle.addEventListener("change", function(){
     document.body.classList.toggle("dark-theme");
@@ -147,5 +149,30 @@ languageToggle.addEventListener("change", function() {
   placeholderElements.forEach(function(element) {
     const translationKey = element.getAttribute("data-i18n-placeholder");
     element.placeholder = translations[currentLanguage][translationKey];
+  });
+});
+
+contactForm.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const formData = new FormData(contactForm);
+
+  fetch(contactForm.action, {
+    method: contactForm.method,
+    body: formData,
+    headers: {
+      "Accept": "application/json"
+    }
+  })
+  .then(function(response) {
+    if (response.ok) {
+      formStatus.textContent = "Message sent successfully!";
+      contactForm.reset();
+    } else {
+      formStatus.textContent = "Something went wrong. Please try again.";
+    }
+  })
+  .catch(function(error) {
+    formStatus.textContent = "Something went wrong. Please try again.";
   });
 });
