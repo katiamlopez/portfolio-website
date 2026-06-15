@@ -15,6 +15,26 @@
             <a href="#certifications">Certifications</a>
             <a href="#skills-tools">Skills & Tools</a>
         </nav>
+
+        <div class="header-actions">
+            <label class="switch theme-switch">
+                <input type="checkbox" id="theme-toggle">
+
+                <span class="slider">
+                <span class="switch-option">☀️</span>
+                <span class="switch-option">🌙</span>
+                </span>
+            </label>
+
+            <label class="switch language-switch">
+                <input type="checkbox" id="language-toggle">
+
+                <span class="slider">
+                <span class="switch-option">EN</span>
+                <span class="switch-option">SP</span>
+                </span>
+            </label>
+        </div>
     </header>
     <main>
         <section id="hero">
@@ -73,20 +93,20 @@
             </article>
             <article class="project-card">
                 <div class="project-info">
-                    <h3>Link in Bio 💖</h3>
+                    <h3>Pomodoro Timer 🍅</h3>
                     <br>
-                    <p>Built as the final project for the Codédex HTML course, this Link in Bio page was designed to create a simple and centralized space for sharing my professional profiles and online presence.</p>
-                    <p>The project was developed using HTML and CSS, focusing on semantic structure, accessibility, and clean page organization.</p>
-                    <p>Visitors can quickly access my social media profiles, GitHub repositories, Codédex profile, and other important links through a responsive and easy-to-navigate interface.</p>
+                    <p>A productivity timer built to help users manage focused work sessions and breaks using the Pomodoro technique. The project includes customizable work intervals, interactive controls, and visual feedback to guide the user through each stage of the session.</p>
+                    <p>This project was developed using HTML, CSS, and JavaScript, with a focus on DOM manipulation, event handling, timer logic, conditional states, and dynamic UI updates.</p>
+                    <p>Users can start, pause, and reset the timer, adjust the number of intervals, track their progress through a visual progress bar, and automatically switch between work mode, break mode, and session completion.</p>
                     <br>
                     <img 
                     class="project-preview" 
-                    src="./assets/link-in-bio-preview.png" 
-                    alt="Preview of Link in Bio project"
+                    src="./assets/pomodoro-preview.png" 
+                    alt="Preview of Pomodoro Timer project"
                     >
                     <div class="project-links">
-                     <a href="https://final-html-project-iota.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
-                     <a href="https://github.com/katiamlopez/final-html-project" target="_blank" rel="noopener noreferrer">View the repository</a>
+                     <a href="https://pomodoro-app-three-phi.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                     <a href="https://github.com/katiamlopez/pomodoro-app/" target="_blank" rel="noopener noreferrer">View the repository</a>
                     </div>
                 </div>
             </article>
@@ -154,13 +174,17 @@
         </section>
     </main>
     <footer>
-      <p>© 2026 Katja.js. Built with HTML & CSS.</p>
+      <p>© 2026 Katja.js. Built with HTML5, CSS3 & JavaScript.</p>
       <p>⭐ Designed with curiosity, creativity, and a love for learning ⭐</p> <br>
       <p>
         Curious about how this site was built? <br>
         <a href="https://github.com/katiamlopez/portfolio-website" target="_blank" rel="noopener noreferrer">View the repository</a>
       </p>
     </footer>
-     <a href="#top" class="back-to-top">↑</a>
+     <a href="#top" class="back-to-top">
+        ↑
+    </a>
+    <!-- JS -->
+    <script src="./app.js"></script>
 </body>
 </html>

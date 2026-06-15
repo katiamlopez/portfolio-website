@@ -34,25 +34,143 @@ h2 {
 }
 /* Header */
 header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 20px;
-  background-color:#e4dcea;
+  background-color: #e4dcea;
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 
 nav a {
-    color: rgb(31, 13, 13);
-    text-decoration: none;
-    font-weight: bold;
+  color: rgb(31, 13, 13);
+  text-decoration: none;
+  font-weight: bold;
 }
 
 nav a:hover {
-    color:ivory;
+  color: ivory;
+}
+
+/* Header buttons */
+.header-actions {
+  position: absolute;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color:#ac9ac6;
+  border-radius: 999px;
+  transition: 0.3s ease;
+}
+
+.slider span {
+  color: #4b3a63;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  background-color:#d9cbe6;
+  border-radius: 999px;
+  transition: 0.3s ease;
+  z-index: 3;
+}
+
+.switch-option {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  user-select: none;
+  color: rgb(31, 13, 13);
+}
+
+/* Theme switch */
+.theme-switch .slider {
+  width: 64px;
+  height: 32px;
+  padding: 0 8px;
+}
+
+.theme-switch .slider::before {
+  width: 24px;
+  height: 24px;
+}
+
+.theme-switch input:checked + .slider::before {
+  transform: translateX(32px);
+}
+
+.theme-switch .switch-option {
+  width: 24px;
+  font-size: 0.8rem;
+  line-height: 1;
+}
+
+/* Language switch */
+.language-switch .slider {
+  width: 64px;
+  height: 32px;
+  padding: 0 8px;
+}
+
+.language-switch .slider::before {
+  width: 26px;
+  height: 24px;
+}
+
+.language-switch input:checked + .slider::before {
+  transform: translateX(32px);
+}
+
+.language-switch .switch-option {
+  width: 24px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+/* Responsive header */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .header-actions {
+    position: static;
+  }
+
+  nav {
+    gap: 16px;
+  }
 }
 /* Hero */
 #hero {
@@ -109,6 +227,11 @@ nav a:hover {
   color: #8f7a9b;
   font-size: 0.85rem;
   font-weight: 600;
+}
+
+.soft-skills span:hover {
+  background-color: #ecd5f4;
+  color: #826c8e;
 }
 
 .project-card,
@@ -282,7 +405,7 @@ footer a:hover {
 }
 
 .contact-form button:hover {
-  color: ivory;
+  background-color: #d8cde8;
 }
 
 .back-to-top {
@@ -302,4 +425,79 @@ footer a:hover {
 
 html {
   scroll-behavior: smooth;
+}
+
+/** DARK THEME */
+
+body.dark-theme {
+  background-color: #1f1530;
+  color: #f8f2ff;
+}
+
+body.dark-theme .project-card,
+body.dark-theme .certification-card,
+body.dark-theme .skills-group {
+  background-color: #2b2140;
+}
+
+body.dark-theme header {
+  background-color: #2b2140;
+}
+
+body.dark-theme nav a {
+  color: #f8f2ff;
+}
+body.dark-theme nav a:hover {
+  color: #9d8ea8;
+}
+body.dark-theme .contact-links a {
+  color: #b9a8c9;
+}
+
+body.dark-theme .contact-form input,
+body.dark-theme .contact-form textarea {
+  background-color: #2b2140;
+  color: #f8f2ff;
+  border-color: #4b3a63;
+}
+
+body.dark-theme .contact-form input::placeholder,
+body.dark-theme .contact-form textarea::placeholder {
+  color: #b9a8c9;
+}
+
+body.dark-theme .contact-form button {
+  background-color: #8e81d6;
+  color: #ffffff;
+}
+
+body.dark-theme .contact-form button:hover {
+  background-color: #b2a5fc;
+}
+
+body.dark-theme .contact-links a:hover,
+body.dark-theme #hero a:hover,
+body.dark-theme footer a:hover, 
+body.dark-theme .back-to-top:hover,
+body.dark-theme .certification-card a:hover,
+body.dark-theme .project-links a:hover 
+{
+  color: #f4c7e7;
+}
+
+body.dark-theme .soft-skills span {
+  background-color: #4b3a63;
+  color: #f8f2ff;
+}
+body.dark-theme .soft-skills span:hover {
+ background-color: #765f98; 
+}
+body.dark-theme .slider {
+  background-color:#765f98;
+}
+body.dark-theme .slider::before {
+  background-color: #5c3d7b;
+}
+body.dark-theme .slider span {
+  color: #ddd;
 }
