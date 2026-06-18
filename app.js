@@ -21,14 +21,17 @@ const translations = {
         downloadResume: "Download Resume",
 
         aboutTitle: "About me",
-        aboutText: "My professional background is in customer service and operations management, where I developed leadership, communication, and problem-solving skills while working with performance metrics and continuous improvement initiatives. Today, I am transitioning into Front-End Development, driven by a passion for technology, user experience, and product design. I am excited to combine my understanding of people with my growing technical skills to create intuitive and engaging digital products.",
-        
-        leadership: "Leadership",
-        problemSolving: "Problem-solving",
-        communication: "Communication",
-        performanceImp: "Performance improvement",
-        analyticalThinking: "Analytical Thinking",
-        userEmpathy: "User empathy",
+        aboutText1: "My professional background comes from customer service, human resources, and operations management, where I developed skills in leadership, communication, analysis, documentation, and problem-solving while working with users, processes, performance metrics, and continuous improvement initiatives.",
+        aboutText2: "I am currently shaping my career toward Front-End development, combining technical foundations in HTML, CSS, JavaScript, and responsive design with a strong focus on user experience and product thinking. I am interested in creating clear, intuitive, and visually thoughtful interfaces that consider both people’s needs and the goals behind each digital solution.",
+
+        softskill1: "Leadership",
+        softskill2: "Problem-solving",
+        softskill3: "Communication",
+        softskill4: "Performance improvement",
+        softskill5: "Analytical thinking",
+        softskill6: "Product thinking",
+        softskill7: "UX thinking",
+        softskill8: "Documentation",
 
         projects: "Projects",
         caliopeTitle: "Caliope - Reader & Writer Platform 📖",
@@ -46,6 +49,7 @@ const translations = {
         pomodoroDescription3: "Users can start, pause, and reset the timer, adjust the number of intervals, track their progress through a visual progress bar, and automatically switch between work mode, break mode, and session completion.",
         
         certifications: "Certifications",
+        introtojava: "Introduction to java",
         completed2026: "Completed in 2026",
 
         skills: "Skills & Tools",
@@ -85,14 +89,17 @@ const translations = {
         downloadResume: "Descargar Currículum",
 
         aboutTitle: "Sobre mí",
-        aboutText: "Mi experiencia profesional viene del servicio al cliente y la gestión de operaciones, donde desarrollé habilidades de liderazgo, comunicación y resolución de problemas mientras trabajaba con métricas de desempeño e iniciativas de mejora continua. Actualmente estoy haciendo una transición hacia el desarrollo Front-End, impulsada por mi interés en la tecnología, la experiencia de usuario y el diseño de producto. Me entusiasma combinar mi comprensión de las personas con mis habilidades técnicas en crecimiento para crear productos digitales intuitivos y atractivos.",
-    
-        leadership: "Liderazgo",
-        problemSolving: "Resolución de problemas",
-        communication: "Comunicación",
-        performanceImp: "Mejora continua",
-        analyticalThinking: "Pensamiento analítico",
-        userEmpathy: "Empatía con el usuario",
+        aboutText1: "Mi experiencia profesional viene del servicio al cliente, recursos humanos y gestión de operaciones, donde desarrollé habilidades de liderazgo, comunicación, análisis, documentación y resolución de problemas trabajando con usuarios, procesos, métricas e iniciativas de mejora continua.",
+        aboutText2: "Actualmente estoy orientando mi carrera hacia el desarrollo Front-End, combinando bases técnicas en HTML, CSS, JavaScript y diseño responsivo con una mirada enfocada en experiencia de usuario y pensamiento de producto. Me interesa crear interfaces claras, intuitivas y visualmente cuidadas, entendiendo tanto las necesidades de las personas como los objetivos detrás de cada solución digital.",
+
+        softskill1: "Liderazgo",
+        softskill2: "Resolución de problemas",
+        softskill3: "Comunicación",
+        softskill4: "Mejora continua",
+        softskill5: "Pensamiento analítico",
+        softskill6: "Pensamiento de producto",
+        softskill7: "Enfoque UX",
+        softskill8: "Documentación",
 
         projects: "Proyectos",
         caliopeTitle: "Caliope - Plataforma para Lectores & Escritores 📖",
@@ -110,6 +117,7 @@ const translations = {
         pomodoroDescription3: "Los usuarios pueden iniciar, pausar y reiniciar el temporizador, ajustar el número de intervalos, seguir su progreso mediante una barra visual y cambiar automáticamente entre modo de trabajo, modo de descanso y sesión completada.",
 
         certifications: "Certificaciones",
+        introtojava: "Introducción a java",
         completed2026: "Completado en 2026",
 
         skills: "Habilidades & Herramientas",
